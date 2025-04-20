@@ -1,0 +1,26 @@
+{
+  "parent": "block/block",
+  "textures": {
+    "particle": "block/cyan_terracotta",
+    "bottom": "block/cyan_terracotta",
+    "top": "road-marking-mod:block/te_yellow_line/te_yellow_line_1-2",
+    "left": "road-marking-mod:block/te_yellow_line/te_yellow_line_1-3",
+    "right": "road-marking-mod:block/te_yellow_line/te_yellow_line_2-4",
+    "front": "block/cyan_terracotta",
+    "back": "block/yellow_terracotta"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 0],
+      "to": [16, 16, 16],
+      "faces": {
+        "down":  { "uv": [0,0,16,16], "texture": "#bottom"},
+        "up":    { "uv": [0,0,16,16], "texture": "#top"},
+        "north": { "uv": [0,0,16,16], "texture": "#left"},
+        "south": { "uv": [0,0,16,16], "texture": "#right"},
+        "west":  { "uv": [0,0,16,16], "texture": "#front" },
+        "east":  { "uv": [0,0,16,16], "texture": "#back" }
+      }
+    }
+  ]
+}

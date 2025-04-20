@@ -1,0 +1,26 @@
+{
+  "parent": "block/block",
+  "textures": {
+    "particle": "block/stone",
+    "bottom": "block/stone",
+    "top": "road-marking-mod:block/yellow_line/yellow_line_4",
+    "left": "block/stone",
+    "right": "road-marking-mod:block/yellow_line/yellow_line_2-4",
+    "front": "block/stone",
+    "back": "road-marking-mod:block/yellow_line/yellow_line_1-3"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 0],
+      "to": [16, 16, 16],
+      "faces": {
+        "down":  { "uv": [0,0,16,16], "texture": "#bottom"},
+        "up":    { "uv": [0,0,16,16], "texture": "#top"},
+        "north": { "uv": [0,0,16,16], "texture": "#left"},
+        "south": { "uv": [0,0,16,16], "texture": "#right"},
+        "west":  { "uv": [0,0,16,16], "texture": "#front" },
+        "east":  { "uv": [0,0,16,16], "texture": "#back" }
+      }
+    }
+  ]
+}

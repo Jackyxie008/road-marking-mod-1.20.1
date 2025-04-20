@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "road-marking-mod",
+	"version": "${version}",
+	"name": "Road Marking Mod",
+	"description": "Add road markings to Minecraft. (add new stair blocks and change their textures = road marking)",
+	"authors": [
+		"JackyXXXIE"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/road-marking-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"name.roadmarkingmod.RoadMarkingMod"
+		],
+		"fabric-datagen": [
+			"name.roadmarkingmod.RoadMarkingModDataGenerator"
+		],
+		"client": [
+			"name.roadmarkingmod.RoadMarkingModClient"
+		]
+	},
+	"mixins": [
+		"road-marking-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

@@ -1,0 +1,26 @@
+{
+  "parent": "block/block",
+  "textures": {
+    "particle": "block/gray_concrete_powder",
+    "bottom": "block/gray_concrete_powder",
+    "top": "road-marking-mod:block/con_white_line_old3/con_white_line_old3_1-2-3",
+    "left": "road-marking-mod:block/con_white_line_old3/con_white_line_old3_1-3",
+    "right": "block/calcite",
+    "front": "road-marking-mod:block/con_white_line_old3/con_white_line_old3_2-4",
+    "back": "block/calcite"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 0],
+      "to": [16, 16, 16],
+      "faces": {
+        "down":  { "uv": [0,0,16,16], "texture": "#bottom"},
+        "up":    { "uv": [0,0,16,16], "texture": "#top"},
+        "north": { "uv": [0,0,16,16], "texture": "#left"},
+        "south": { "uv": [0,0,16,16], "texture": "#right"},
+        "west":  { "uv": [0,0,16,16], "texture": "#front" },
+        "east":  { "uv": [0,0,16,16], "texture": "#back" }
+      }
+    }
+  ]
+}
