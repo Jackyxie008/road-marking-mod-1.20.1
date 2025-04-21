@@ -19,8 +19,52 @@ public class ModBlocks {
 
     // ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ 方块 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 
-    // gray_concrete黄线
     public static final Block X_WHITE_LINE = registerBlock("x_white_line",
+            new GlazedTerracottaBlock(FabricBlockSettings.copyOf(Blocks.BLACK_GLAZED_TERRACOTTA)));
+    public static final Block X_WHITE_LINE_OLD1 = registerBlock("x_white_line_old1",
+            new GlazedTerracottaBlock(FabricBlockSettings.copyOf(Blocks.BLACK_GLAZED_TERRACOTTA)));
+    public static final Block X_WHITE_LINE_OLD2 = registerBlock("x_white_line_old2",
+            new GlazedTerracottaBlock(FabricBlockSettings.copyOf(Blocks.BLACK_GLAZED_TERRACOTTA)));
+    public static final Block X_WHITE_LINE_OLD3 = registerBlock("x_white_line_old3",
+            new GlazedTerracottaBlock(FabricBlockSettings.copyOf(Blocks.BLACK_GLAZED_TERRACOTTA)));
+
+    public static final Block TE_X_WHITE_LINE = registerBlock("te_x_white_line",
+            new GlazedTerracottaBlock(FabricBlockSettings.copyOf(Blocks.BLACK_GLAZED_TERRACOTTA)));
+    public static final Block TE_X_WHITE_LINE_OLD1 = registerBlock("te_x_white_line_old1",
+            new GlazedTerracottaBlock(FabricBlockSettings.copyOf(Blocks.BLACK_GLAZED_TERRACOTTA)));
+    public static final Block TE_X_WHITE_LINE_OLD2 = registerBlock("te_x_white_line_old2",
+            new GlazedTerracottaBlock(FabricBlockSettings.copyOf(Blocks.BLACK_GLAZED_TERRACOTTA)));
+    public static final Block TE_X_WHITE_LINE_OLD3 = registerBlock("te_x_white_line_old3",
+            new GlazedTerracottaBlock(FabricBlockSettings.copyOf(Blocks.BLACK_GLAZED_TERRACOTTA)));
+
+    public static final Block CON_X_WHITE_LINE = registerBlock("con_x_white_line",
+            new GlazedTerracottaBlock(FabricBlockSettings.copyOf(Blocks.BLACK_GLAZED_TERRACOTTA)));
+    public static final Block CON_X_WHITE_LINE_OLD1 = registerBlock("con_x_white_line_old1",
+            new GlazedTerracottaBlock(FabricBlockSettings.copyOf(Blocks.BLACK_GLAZED_TERRACOTTA)));
+    public static final Block CON_X_WHITE_LINE_OLD2 = registerBlock("con_x_white_line_old2",
+            new GlazedTerracottaBlock(FabricBlockSettings.copyOf(Blocks.BLACK_GLAZED_TERRACOTTA)));
+    public static final Block CON_X_WHITE_LINE_OLD3 = registerBlock("con_x_white_line_old3",
+            new GlazedTerracottaBlock(FabricBlockSettings.copyOf(Blocks.BLACK_GLAZED_TERRACOTTA)));
+
+    public static final Block X_YELLOW_LINE = registerBlock("x_yellow_line",
+            new GlazedTerracottaBlock(FabricBlockSettings.copyOf(Blocks.BLACK_GLAZED_TERRACOTTA)));
+    public static final Block X_YELLOW_LINE_OLD1 = registerBlock("x_yellow_line_old1",
+            new GlazedTerracottaBlock(FabricBlockSettings.copyOf(Blocks.BLACK_GLAZED_TERRACOTTA)));
+    public static final Block X_YELLOW_LINE_OLD2 = registerBlock("x_yellow_line_old2",
+            new GlazedTerracottaBlock(FabricBlockSettings.copyOf(Blocks.BLACK_GLAZED_TERRACOTTA)));
+
+    public static final Block TE_X_YELLOW_LINE = registerBlock("te_x_yellow_line",
+            new GlazedTerracottaBlock(FabricBlockSettings.copyOf(Blocks.BLACK_GLAZED_TERRACOTTA)));
+    public static final Block TE_X_YELLOW_LINE_OLD1 = registerBlock("te_x_yellow_line_old1",
+            new GlazedTerracottaBlock(FabricBlockSettings.copyOf(Blocks.BLACK_GLAZED_TERRACOTTA)));
+    public static final Block TE_X_YELLOW_LINE_OLD2 = registerBlock("te_x_yellow_line_old2",
+            new GlazedTerracottaBlock(FabricBlockSettings.copyOf(Blocks.BLACK_GLAZED_TERRACOTTA)));
+
+    public static final Block CON_X_YELLOW_LINE = registerBlock("con_x_yellow_line",
+            new GlazedTerracottaBlock(FabricBlockSettings.copyOf(Blocks.BLACK_GLAZED_TERRACOTTA)));
+    public static final Block CON_X_YELLOW_LINE_OLD1 = registerBlock("con_x_yellow_line_old1",
+            new GlazedTerracottaBlock(FabricBlockSettings.copyOf(Blocks.BLACK_GLAZED_TERRACOTTA)));
+    public static final Block CON_X_YELLOW_LINE_OLD2 = registerBlock("con_x_yellow_line_old2",
             new GlazedTerracottaBlock(FabricBlockSettings.copyOf(Blocks.BLACK_GLAZED_TERRACOTTA)));
 
     // ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ 方块 ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
@@ -33,141 +77,106 @@ public class ModBlocks {
                     FabricBlockSettings.copyOf(Blocks.STONE_STAIRS)
                             .sounds(BlockSoundGroup.STONE)
                             .nonOpaque()));
-
-    // gray_concrete黄线 老化1
     public static final Block CON_YELLOW_LINE_OLD1 = registerBlock("con_yellow_line_old1",
             new StairsBlock(Blocks.STONE_STAIRS.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.STONE_STAIRS)
                             .sounds(BlockSoundGroup.STONE)
                             .nonOpaque()));
-
-    // gray_concrete黄线 老化2
     public static final Block CON_YELLOW_LINE_OLD2 = registerBlock("con_yellow_line_old2",
             new StairsBlock(Blocks.STONE_STAIRS.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.STONE_STAIRS)
                             .sounds(BlockSoundGroup.STONE)
                             .nonOpaque()));
-
     // gray_concrete白线
     public static final Block CON_WHITE_LINE = registerBlock("con_white_line",
             new StairsBlock(Blocks.STONE_STAIRS.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.STONE_STAIRS)
                             .sounds(BlockSoundGroup.STONE)
                             .nonOpaque()));
-
-    // gray_concrete白线 老化1
     public static final Block CON_WHITE_LINE_OLD1 = registerBlock("con_white_line_old1",
             new StairsBlock(Blocks.STONE_STAIRS.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.STONE_STAIRS)
                             .sounds(BlockSoundGroup.STONE)
                             .nonOpaque()));
-
-    // gray_concrete白线 老化2
     public static final Block CON_WHITE_LINE_OLD2 = registerBlock("con_white_line_old2",
             new StairsBlock(Blocks.STONE_STAIRS.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.STONE_STAIRS)
                             .sounds(BlockSoundGroup.STONE)
                             .nonOpaque()));
-
-    // gray_concrete白线 老化3
     public static final Block CON_WHITE_LINE_OLD3 = registerBlock("con_white_line_old3",
             new StairsBlock(Blocks.STONE_STAIRS.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.STONE_STAIRS)
                             .sounds(BlockSoundGroup.STONE)
                             .nonOpaque()));
-
     // cyan_terracotta黄线
     public static final Block TE_YELLOW_LINE = registerBlock("te_yellow_line",
             new StairsBlock(Blocks.STONE_STAIRS.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.STONE_STAIRS)
                             .sounds(BlockSoundGroup.STONE)
                             .nonOpaque()));
-
-    // cyan_terracotta黄线 老化1
     public static final Block TE_YELLOW_LINE_OLD1 = registerBlock("te_yellow_line_old1",
             new StairsBlock(Blocks.STONE_STAIRS.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.STONE_STAIRS)
                             .sounds(BlockSoundGroup.STONE)
                             .nonOpaque()));
-
-    // cyan_terracotta黄线 老化2
     public static final Block TE_YELLOW_LINE_OLD2 = registerBlock("te_yellow_line_old2",
             new StairsBlock(Blocks.STONE_STAIRS.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.STONE_STAIRS)
                             .sounds(BlockSoundGroup.STONE)
                             .nonOpaque()));
-
     // cyan_terracotta白线
     public static final Block TE_WHITE_LINE = registerBlock("te_white_line",
             new StairsBlock(Blocks.STONE_STAIRS.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.STONE_STAIRS)
                             .sounds(BlockSoundGroup.STONE)
                             .nonOpaque()));
-
-    // cyan_terracotta白线 老化1
     public static final Block TE_WHITE_LINE_OLD1 = registerBlock("te_white_line_old1",
             new StairsBlock(Blocks.STONE_STAIRS.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.STONE_STAIRS)
                             .sounds(BlockSoundGroup.STONE)
                             .nonOpaque()));
-
-    // cyan_terracotta白线 老化2
     public static final Block TE_WHITE_LINE_OLD2 = registerBlock("te_white_line_old2",
             new StairsBlock(Blocks.STONE_STAIRS.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.STONE_STAIRS)
                             .sounds(BlockSoundGroup.STONE)
                             .nonOpaque()));
-
-    // cyan_terracotta白线 老化3
     public static final Block TE_WHITE_LINE_OLD3 = registerBlock("te_white_line_old3",
             new StairsBlock(Blocks.STONE_STAIRS.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.STONE_STAIRS)
                             .sounds(BlockSoundGroup.STONE)
                             .nonOpaque()));
-
     // 石头黄线
     public static final Block YELLOW_LINE = registerBlock("yellow_line",
             new StairsBlock(Blocks.STONE_STAIRS.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.STONE_STAIRS)
                             .sounds(BlockSoundGroup.STONE)
                             .nonOpaque()));
-
-    // 石头黄线 老化1
     public static final Block YELLOW_LINE_OLD1 = registerBlock("yellow_line_old1",
             new StairsBlock(Blocks.STONE_STAIRS.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.STONE_STAIRS)
                             .sounds(BlockSoundGroup.STONE)
                             .nonOpaque()));
-
-    // 石头黄线 老化2
     public static final Block YELLOW_LINE_OLD2 = registerBlock("yellow_line_old2",
             new StairsBlock(Blocks.STONE_STAIRS.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.STONE_STAIRS)
                             .sounds(BlockSoundGroup.STONE)
                             .nonOpaque()));
-
     // 石头白线
     public static final Block WHITE_LINE = registerBlock("white_line",
             new StairsBlock(Blocks.STONE_STAIRS.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.STONE_STAIRS)
                             .sounds(BlockSoundGroup.STONE)
                             .nonOpaque()));
-
-    // 石头白线 老化1
     public static final Block WHITE_LINE_OLD1 = registerBlock("white_line_old1",
             new StairsBlock(Blocks.STONE_STAIRS.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.STONE_STAIRS)
                             .sounds(BlockSoundGroup.STONE)
                             .nonOpaque()));
-
-    // 石头白线 老化2
     public static final Block WHITE_LINE_OLD2 = registerBlock("white_line_old2",
             new StairsBlock(Blocks.STONE_STAIRS.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.STONE_STAIRS)
                             .sounds(BlockSoundGroup.STONE)
                             .nonOpaque()));
-
-    // 石头白线 老化3
     public static final Block WHITE_LINE_OLD3 = registerBlock("white_line_old3",
             new StairsBlock(Blocks.STONE_STAIRS.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.STONE_STAIRS)

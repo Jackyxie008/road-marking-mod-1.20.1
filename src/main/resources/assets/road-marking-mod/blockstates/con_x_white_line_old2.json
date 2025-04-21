@@ -1,0 +1,23 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "road-marking-mod:block/con_x_white_line_old2/con_x_white_line_old2_ew",
+      "uvlock": true,
+      "y": 270
+    },
+    "facing=north": {
+      "model": "road-marking-mod:block/con_x_white_line_old2/con_x_white_line_old2_sn",
+      "uvlock": true,
+      "y": 180
+    },
+    "facing=south": {
+      "model": "road-marking-mod:block/con_x_white_line_old2/con_x_white_line_old2_sn",
+      "uvlock": true
+    },
+    "facing=west": {
+      "model": "road-marking-mod:block/con_x_white_line_old2/con_x_white_line_old2_ew",
+      "uvlock": true,
+      "y": 90
+    }
+  }
+}
